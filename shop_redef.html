@@ -1,0 +1,13 @@
+<script defer>
+// Да простят меня боги, но я не виноват, что родился в РБ
+// Хотя это не оправдание говновкоду
+// менять надо data-payment-variant-system и value
+window.onload = function() {
+	var elementTxt = document.getElementsByClassName('t-radio__control t-text t-text_xs');
+	elementTxt[0].innerHTML ='<input type="radio" name="paymentsystem" value="cash" checked="checked" class="t-radio t-radio_payment" data-payment-variant-system="cash"><div class="t-radio__indicator" style="border-color:#b89e65"></div>Оплата при получении';
+	elementTxt[1].innerHTML ='<input type="radio" name="paymentsystem" value="erip" class="t-radio t-radio_payment" data-payment-variant-system="erip"><div class="t-radio__indicator" style="border-color:#b89e65"></div>Оплата с помощью ЕРИП';
+	elementTxt[2].innerHTML ='<input type="radio" name="paymentsystem" value="kard" class="t-radio t-radio_payment" data-payment-variant-system="kard"><div class="t-radio__indicator" style="border-color:#b89e65"></div>Оплата с помощью карты Visa / Mastercard';
+};
+</script>
+
+
